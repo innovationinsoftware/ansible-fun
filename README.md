@@ -18,3 +18,7 @@ Lab 5: [Ansible Playbook Error Handling](labs/error-handling/index.md)
 Lab 6: [Ansible Templating](labs/templates/index.md)   
 Lab 7: [Ansible roles](labs/roles/index.md)   
 Lab 8: [Write an Ansible module](labs/gh_module/index.md)   
+
+## Intermediate
+[Ad-hoc](labs/intermediate/ad-hoc/index.md)   
+[Playbook](labs/intermediate/playbook-fun/index.md)   
