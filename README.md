@@ -5,6 +5,7 @@ This site includes the labs for the Ansible Automation Fundamentals class.
 ## Labs
 
 [VM Information](VM_access_Group-A.md)   
+[Ansible Controller Information](https://docs.google.com/spreadsheets/d/1P_rrijRUZVtwRfS5rKJaWUP1_mIjg5QozRDyFj0eqMQ/edit?usp=sharing)
 
 ### Day 1
 Lab 1: [Connect to Ansible Controller](labs/setup/index.md)   
