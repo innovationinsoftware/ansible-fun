@@ -267,7 +267,7 @@ Create a file named `deploy_db.yml`:
 
     - name: Create the servers table
       community.mysql.mysql_query:
-        db: "{{ db_name }}"
+        login_db: "{{ db_name }}"
         query: >
           CREATE TABLE IF NOT EXISTS servers (
             id INT AUTO_INCREMENT PRIMARY KEY,
@@ -280,7 +280,7 @@ Create a file named `deploy_db.yml`:
 
     - name: Seed the database with initial data
       community.mysql.mysql_query:
-        db: "{{ db_name }}"
+        login_db: "{{ db_name }}"
         query: >
           INSERT INTO servers (hostname, role, environment)
           SELECT '{{ inventory_hostname }}', 'database', '{{ app_env }}'
@@ -289,7 +289,7 @@ Create a file named `deploy_db.yml`:
 
     - name: Verify database setup
       community.mysql.mysql_query:
-        db: "{{ db_name }}"
+        login_db: "{{ db_name }}"
         query: "SELECT * FROM servers"
         login_unix_socket: /var/lib/mysql/mysql.sock
       register: db_output
