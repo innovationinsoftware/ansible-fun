@@ -127,7 +127,7 @@ Because we have not specified an inventory, Ansible will run the playbook on `lo
 Run the playbook:
 
 ```
-ansible-playbook play.yml
+ansible-playbook play.yml 
 ```
 
 Sample output: 
@@ -215,7 +215,7 @@ Update the playbook to use the vault encrypted key, and add more fields.
 Run the playbook and it will display a dictionary of inputs passed in. 
 
 ```sh
-ansible-playbook play.yml
+ansible-playbook play.yml --ask-vault-pass
 ```
 
 
