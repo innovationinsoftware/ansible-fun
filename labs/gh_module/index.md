@@ -199,14 +199,14 @@ Update the playbook to use the vault encrypted key, and add more fields.
     - name: Create a github Repo
       github_repo:
         github_auth_key: "{{ github_token }}" 
-          username: "YOUR GITHUB USERNAME HERE"
-          name: "Hello-World"
-          description: "This is your first repository"
-          private: yes
-          has_issues: no
-          has_wiki: no
-          has_downloads: no
-         state: present
+        username: "YOUR GITHUB USERNAME HERE"
+        name: "Hello-World"
+        description: "This is your first repository"
+        private: yes
+        has_issues: no
+        has_wiki: no
+        has_downloads: no
+        state: present
       register: result
     - debug: var=result
     
