@@ -198,7 +198,7 @@ Update the playbook to use the vault encrypted key, and add more fields.
   tasks:
     - name: Create a github Repo
       github_repo:
-        github_auth_key: {% raw %} "{{ github_token }}" {% endraw %}
+        github_auth_key: "{{ github_token }}" 
           username: "YOUR GITHUB USERNAME HERE"
           name: "Hello-World"
           description: "This is your first repository"
@@ -369,7 +369,7 @@ Here is a sample of what that might look like:
   tasks:
     - name: Create a GitHub Repo
       github_repo:
-        github_auth_key: {% raw %} "{{github_token}}" {% endraw %}
+        github_auth_key: "{{github_token}}"
         username: "YOUR GITHUB USERNAME HERE"
         name: "Hello-World"
         description: "First repo created with custom Ansible module"
@@ -394,7 +394,7 @@ Update the playbook with the following task to delete the repository. Remember t
 ```yml
     - name: Delete GitHub Repo
       github_repo:
-        github_auth_key: {% raw %} "{{github_token}}" {% endraw %}
+        github_auth_key: "{{github_token}}"
         username: "YOUR GITHUB USERNAME HERE"
         name: "Hello-World"
         state: absent
