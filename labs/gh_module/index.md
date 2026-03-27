@@ -29,6 +29,12 @@ Generate Personal Access Token to authenticate from Ansible to GitHub.
 
 ## Secure the Token with Ansible Vault
 
+Create and enter a working directory: 
+```
+mkdir -p ~/github_module
+cd ~/github_module 
+```
+
 Before proceeding, we need to secure the GitHub token using **Ansible Vault**.
 
 1. Create a new Ansible Vault file:
